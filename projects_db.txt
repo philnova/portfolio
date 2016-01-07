@@ -1,0 +1,5 @@
+TITLE	DESCRIPTION	LINK	GITHUB	IMAGE_URL	TECHNOLOGIES	NICKNAME
+Local Social News	Aggregator for social media and news relevant to your city	http://localsocialnews.com	https://github.com/philnova/localsocialnews	images/thumbnail_localsocialnews.png	JavaScript, jQuery, HTML/CSS	lsn	
+Phil's Phavorite Philms	A trailer site for my favorite films	http://google.com	https://github.com/philnova/movie_site_builder	images/thumbnail_phavoritemovies.png	JavaScript, Python, Bootstrap, HTML/CSS	p3	
+Resume	Resume site demonstrating DOM manipulation using jQuery	http://philnova.github.io	https://github.com/philnova/philnova.github.io	images/thumbnail_resume.png	JavaScript, jQuery, HTML/CSS	resume		
+CRISpy	Python library for scanning the genome	http://github.com/philnova/crispy	http://github.com/philnova/crispy	images/thumbnail_crispy.png	Python	crispy	
