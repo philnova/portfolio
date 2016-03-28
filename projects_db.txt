@@ -1,5 +1,5 @@
 TITLE	DESCRIPTION	LINK	GITHUB	IMAGE_URL	TECHNOLOGIES	NICKNAME
-ForgetMeNot	flask todo app with custom SMS reminders powered by Twilio API	http://vast-refuge-77725.herokuapp.com/	https://github.com/philnova/reminderapp	images/thumbnail_forgetmenot.png	flask, postgreSQL, python, celery, JavaScript, Heroku, Twilio 	fmn
+ForgetMeNot	flask todo app with custom SMS reminders powered by Twilio API	http://vast-refuge-77725.herokuapp.com/	https://github.com/philnova/reminderapp	images/thumbnail_forgetmenot.png	flask, postgreSQL, python, celery, JavaScript, Heroku, Twilio 	fmn	
 Local Social News	Aggregator for social media and news relevant to your city	http://localsocialnews.com	https://github.com/philnova/localsocialnews	images/thumbnail_localsocialnews.png	JavaScript, jQuery, HTML/CSS	lsn	
 HanePlane	Flappy Bird Clone for the Browser. Players can input a username and their high scores will be saved to a database. The top ten scores are displayed on the site.	http://philnova.io/haneplane	https://github.com/philnova/haneplane	images/thumbnail_haneplane.png	Front end: JavaScript, jQuery, HTML5/CSS; Back end: PHP, mySQL	hp	
 Phil's Phavorite Philms	A trailer site for my favorite films	http://philnova.io/filmsite/	https://github.com/philnova/movie_site_builder	images/thumbnail_phavoritemovies.png	JavaScript, Python, Bootstrap, HTML/CSS	p3	
