@@ -17,6 +17,10 @@
     </script>
 
     <style type="text/css" media="screen">
+        html{
+            margin: 0;
+            padding: 0;
+        }
         body {
             padding-top: 80px;
         }
@@ -38,6 +42,7 @@
         .project-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+
         }
         .project-tile:hover {
             background-color: #EEE;
@@ -68,28 +73,28 @@
             background-color: white;
         }
 
-        footer {background-color: grey}
-
-        .nav {
-            border:1px solid #ccc;
-            border-width:1px 0;
-            list-style:none;
-            margin:0;
-            padding:0;
-            text-align:center;
-        }
-        .nav li{
-            display:inline;
-        }
-        .nav a{
-            display:inline-block;
-            padding:10px;
-            text-color: white;
-        }
-
-        #modal-footer {
+        .modal-footer {
             text-align: center;
+            width: 100%;
         }
+
+        .footer {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .footer-link {
+            text-align: center;
+            display: inline-block;
+            width: 33%;
+            color: grey;
+            line-height: 50px;
+            font-size: 100%;
+
+        }
+
 
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -106,24 +111,24 @@
     <!-- Project Modal -->
     
     
-<div class="modal fade" role="dialog" id="p3">
+<div class="modal fade" role="dialog" id="hp">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
     <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
         <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
     </a>
-    <h1>Phil's Phavorite Philms</h1>
+    <h1>HanePlane</h1>
 </div>
     <div class="modal-body">
         
-    <p><strong>Description:</strong> A trailer site for my favorite films </p>
-    <p><strong>Technologies Used:</strong> JavaScript, Python, Bootstrap, HTML/CSS </p>
+    <p><strong>Description:</strong> Flappy Bird Clone for the Browser. Players can input a username and their high scores will be saved to a database. The top ten scores are displayed on the site. </p>
+    <p><strong>Technologies Used:</strong> Front end: JavaScript, jQuery, HTML5/CSS; Back end: PHP, mySQL </p>
 
     </div>
     <div class="modal-footer">
-        <a href="https://github.com/philnova/movie_site_builder" class="btn btn-info" role="button">Source Code</a>
-        <a href="http://google.com" class="btn btn-info" role="button">Website</a>
+        <a href="https://github.com/philnova/haneplane" class="btn btn-info" role="button">Source Code</a>
+        <a href="http://philnova.io/haneplane" class="btn btn-info" role="button">Website</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
 </div>
@@ -154,30 +159,6 @@
 </div>
     </div>
 
-<div class="modal fade" role="dialog" id="resume">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-    <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-        <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
-    </a>
-    <h1>Resume</h1>
-</div>
-    <div class="modal-body">
-        
-    <p><strong>Description:</strong> Resume site demonstrating DOM manipulation using jQuery </p>
-    <p><strong>Technologies Used:</strong> JavaScript, jQuery, HTML/CSS </p>
-
-    </div>
-    <div class="modal-footer">
-        <a href="https://github.com/philnova/philnova.github.io" class="btn btn-info" role="button">Source Code</a>
-        <a href="http://philnova.github.io" class="btn btn-info" role="button">Website</a>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    </div>
-</div>
-</div>
-    </div>
-
 <div class="modal fade" role="dialog" id="lsn">
 <div class="modal-dialog">
 <div class="modal-content">
@@ -202,6 +183,54 @@
 </div>
     </div>
 
+<div class="modal fade" role="dialog" id="p3">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+        <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+    </a>
+    <h1>Phil's Phavorite Philms</h1>
+</div>
+    <div class="modal-body">
+        
+    <p><strong>Description:</strong> A trailer site for my favorite films </p>
+    <p><strong>Technologies Used:</strong> JavaScript, Python, Bootstrap, HTML/CSS </p>
+
+    </div>
+    <div class="modal-footer">
+        <a href="https://github.com/philnova/movie_site_builder" class="btn btn-info" role="button">Source Code</a>
+        <a href="http://philnova.io/filmsite/" class="btn btn-info" role="button">Website</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+    </div>
+
+<div class="modal fade" role="dialog" id="resume">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+        <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+    </a>
+    <h1>Resume</h1>
+</div>
+    <div class="modal-body">
+        
+    <p><strong>Description:</strong> Resume site demonstrating DOM manipulation using jQuery </p>
+    <p><strong>Technologies Used:</strong> JavaScript, jQuery, HTML/CSS </p>
+
+    </div>
+    <div class="modal-footer">
+        <a href="https://github.com/philnova/philnova.github.io" class="btn btn-info" role="button">Source Code</a>
+        <a href="http://philnova.github.io" class="btn btn-info" role="button">Website</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+    </div>
+
       
     <!-- Main Page Content -->
     <div class="container">
@@ -215,10 +244,10 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 project-tile text-center" data-toggle="modal" data-target="#p3">
+<div class="col-md-6 col-lg-4 project-tile text-center" data-toggle="modal" data-target="#hp">
     
-    <img src="images/thumbnail_phavoritemovies.png" width="200" height="200">
-    <h2>Phil's Phavorite Philms</h2>
+    <img src="images/thumbnail_haneplane.png" width="200" height="200">
+    <h2>HanePlane</h2>
     
 </div>
 
@@ -231,14 +260,6 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 project-tile text-center" data-toggle="modal" data-target="#resume">
-    
-    <img src="images/thumbnail_resume.png" width="200" height="200">
-    <h2>Resume</h2>
-    
-</div>
-
-
 <div class="col-md-6 col-lg-4 project-tile text-center" data-toggle="modal" data-target="#lsn">
     
     <img src="images/thumbnail_localsocialnews.png" width="200" height="200">
@@ -247,24 +268,35 @@
 </div>
 
 
-    </div>
-      
-
-<div class="footer">
-    <ul class="nav">
-      <li><a href="http://github.com/philnova">github</a></li>
-      <li><a href="http://twitter.com/phil_nova">twitter</a></li>
-      <li><a href="http://phil-nova.com/blog">blog</a></li>
-      <li><a href="">linkedin</a>https://www.linkedin.com/in/phil-nova-73a76849</li>
-      <li><a href="http://philnova.github.io">cv</a></li>
-    </ul>
+<div class="col-md-6 col-lg-4 project-tile text-center" data-toggle="modal" data-target="#p3">
+    
+    <img src="images/thumbnail_phavoritemovies.png" width="200" height="200">
+    <h2>Phil's Phavorite Philms</h2>
+    
 </div>
 
+
+<div class="col-md-6 col-lg-4 project-tile text-center" data-toggle="modal" data-target="#resume">
+    
+    <img src="images/thumbnail_resume.png" width="200" height="200">
+    <h2>Resume</h2>
+    
+</div>
+
+
+    </div>
     </div>
   </div>
 
-
-  
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <div class="footer">
+            <a class="footer-link" href="http://github.com/philnova">github</a>
+            <a class="footer-link" href="http://twitter.com/phil_nova">twitter</a>
+            <a class="footer-link" href="http://phil-nova.com/blog">blog</a>
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>

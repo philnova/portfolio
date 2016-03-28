@@ -23,6 +23,10 @@ main_page_head = '''
     </script>
 
     <style type="text/css" media="screen">
+        html{
+            margin: 0;
+            padding: 0;
+        }
         body {
             padding-top: 80px;
         }
@@ -44,6 +48,7 @@ main_page_head = '''
         .project-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+
         }
         .project-tile:hover {
             background-color: #EEE;
@@ -74,28 +79,28 @@ main_page_head = '''
             background-color: white;
         }
 
-        footer {background-color: grey}
-
-        .nav {
-            border:1px solid #ccc;
-            border-width:1px 0;
-            list-style:none;
-            margin:0;
-            padding:0;
-            text-align:center;
-        }
-        .nav li{
-            display:inline;
-        }
-        .nav a{
-            display:inline-block;
-            padding:10px;
-            text-color: white;
-        }
-
-        #modal-footer {
+        .modal-footer {
             text-align: center;
+            width: 100%;
         }
+
+        .footer {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .footer-link {
+            text-align: center;
+            display: inline-block;
+            width: 33%;
+            color: grey;
+            line-height: 50px;
+            font-size: 100%;
+
+        }
+
 
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -130,23 +135,18 @@ main_page_content = '''
     <div class="container">
       {project_tiles}
     </div>
-      
-
-<div class="footer">
-    <ul class="nav">
-      <li><a href="http://github.com/philnova">github</a></li>
-      <li><a href="http://twitter.com/phil_nova">twitter</a></li>
-      <li><a href="http://phil-nova.com/blog">blog</a></li>
-      <li><a href="">linkedin</a>https://www.linkedin.com/in/phil-nova-73a76849</li>
-      <li><a href="http://philnova.github.io">cv</a></li>
-    </ul>
-</div>
-
     </div>
   </div>
 
-
-  
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <div class="footer">
+            <a class="footer-link" href="http://github.com/philnova">github</a>
+            <a class="footer-link" href="http://twitter.com/phil_nova">twitter</a>
+            <a class="footer-link" href="http://phil-nova.com/blog">blog</a>
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>
@@ -223,7 +223,7 @@ def create_project_popout_content(projects):
 
 def open_projects_page(projects):
     # Create or overwrite the output file
-    output_file = open('index.html', 'w')
+    output_file = open('home.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     final_content = main_page_content.format(
