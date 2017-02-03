@@ -8,7 +8,8 @@ def parse_project_file(filename):
 	with open(filename) as fo:
 		for idx, line in enumerate(fo):
 			if idx: #ignore first line
-				line_array = line.split("\t")
+				line_array = line.split("   ")
+				print line_array
 				title, description, link, github, image_url, technologies, nickname = line_array[0], line_array[1], line_array[2], line_array[3], line_array[4], line_array[5], line_array[6]
 				current_project = project.Project(title, description, link, github, image_url, technologies, nickname)
 				project_array.append(current_project)
